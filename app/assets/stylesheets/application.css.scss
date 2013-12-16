@@ -1,0 +1,39 @@
+@import "foundation";
+@import "settings";
+@import "home";
+@import "mixins/colors";
+@import "mixins/widths";
+
+// Layout Styles
+
+
+// Nav Styles
+#nav-outer{
+  background-color: $dark-grey;
+  color: $white;
+  nav{
+    @include main(1050);
+  }
+}
+
+#content{
+  @include main(1050);
+}
+
+#footer{
+  &:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  @include main(1000);
+  position: relative;
+  background-color: $dark-grey;
+  color: $white;
+  p{
+    color: $white;
+  }
+}

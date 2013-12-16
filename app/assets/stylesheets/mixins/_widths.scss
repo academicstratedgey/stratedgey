@@ -1,0 +1,4 @@
+@mixin main($width){
+    margin: auto;
+    max-width: emCalc($width);
+}

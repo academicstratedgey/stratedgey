@@ -1,0 +1,42 @@
+!!!
+%html
+  %head
+    %title Stratedgy
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "vendor/modernizr"
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+  %body
+    #nav-outer
+      %nav.top-bar
+        %ul.title-area
+          %li.name
+            %h1
+              %a{href: '#'}
+                StratEDgy
+        %section.top-bar-section
+          %ul.left
+            %li
+              %a{href: '#'}
+                About
+            %li
+              %a{href: '#'}
+                Services
+            %li
+              %a{href: '#'}
+                Resources
+            %li
+              %a{href: '#'}
+                Success
+            %li
+              %a{href: '#'}
+                Contact
+
+    #content
+      = yield
+    #footer
+      %p.left
+        ACADEMIC STRATEDGEY 2013. All rights reserveed
+      %p.right
+        Contact info@academicstratedgey.com
