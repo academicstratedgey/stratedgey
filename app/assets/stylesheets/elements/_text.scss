@@ -1,0 +1,23 @@
+@import "elements/colors";
+
+.red{
+    color: $crimson;
+}
+
+.red-strong{
+    color: $crimson;
+    font-weight: bold;
+}
+
+.normal{
+
+}
+
+.panel-title{
+    margin-bottom: emCalc(20);
+}
+
+.spaced-strong{
+    margin: emCalc(20) 0;
+    font-weight: bold;
+}

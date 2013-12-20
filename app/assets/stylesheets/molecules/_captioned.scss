@@ -1,0 +1,10 @@
+.captioned-circle{
+    margin-bottom: emCalc(20);
+    .circle{
+        margin: auto;
+    }
+    .caption{
+        padding-top: 0.5em;
+        text-align: center;
+    }
+}

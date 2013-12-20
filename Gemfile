@@ -30,6 +30,7 @@ gem 'haml_coffee_assets'
 gem 'execjs'
 # Foundation CSS and JS framework
 gem 'foundation-rails'
+gem 'compass-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 # Use Uglifier as compressor for JavaScript assets

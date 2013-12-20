@@ -1,0 +1,23 @@
+@import "elements/colors";
+@import "elements/borders";
+
+.service-item{
+    @include thin_border;
+    padding: 1em;
+    margin: emCalc(20) 0;
+    background-color: $white;
+    .title{
+        font-size: emCalc(20);
+        color: $crimson;
+        border-bottom: solid #d9d9d9 emCalc(1);
+    }
+    .tagline{
+        font-style: italic;
+    }
+    .description{
+        margin-top: emCalc(20);
+    }
+    ul{
+        margin-top: emCalc(20);
+    }
+}

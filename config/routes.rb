@@ -2,12 +2,10 @@ Stratedgy::Application.routes.draw do
 
   root 'home#index'
 
-  get 'about' => 'home#about'
-  get 'services' => 'home#services'
-  get 'services/:type' => 'home#services'
-  get 'resources' => 'home#resources'
-  get 'success' => 'home#success'
-  get 'contact' => 'home#contact'
+  get 'about' => 'home#about', as: :about
+  get 'services/(:type)' => 'home#services', as: :services
+  get 'resources' => 'home#resources', as: :resources
+  get 'contact' => 'home#contact', as: :contact
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

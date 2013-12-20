@@ -1,3 +1,4 @@
+require 'debugger'
 class HomeController < ApplicationController
     def index
 
@@ -8,7 +9,9 @@ class HomeController < ApplicationController
     end
 
     def services
-
+        if params[:type]
+            render params[:type]
+        end
     end
 
     def resources

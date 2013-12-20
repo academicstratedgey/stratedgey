@@ -1,23 +1,61 @@
+// Libraries
 @import "foundation_and_overrides";
-@import "settings";
+@import "compass";
+@import "foundation/components/orbit";
+
+// App Imports
 @import "home";
-@import "mixins/colors";
-@import "mixins/widths";
+
+// elements
+@import "elements/colors";
+@import "elements/containers";
+@import "elements/text";
+
+// molecules
+@import "molecules/captioned";
+@import "molecules/items";
+
+// page specific
+@import "pages/index";
+@import "pages/about";
+@import "pages/services";
 
 // Layout Styles
-
+h2{
+  font-size: emCalc(22);
+}
 
 // Nav Styles
 #nav-outer{
-  background-color: $dark-grey;
+  background-color: $dark-gray;
   color: $white;
   nav{
     @include main(1050);
   }
 }
 
-#content{
+#logo{
+  padding: 1em;
+  background-color: $crimson;
+  color: $white;
+  h1{
+    color: $white;
+  }
+
+  p.tagline{
+    text-align: right;
+    font-style: italic;
+  }
+}
+
+#outer{
+  @include single-box-shadow($gray, 0, 10px, 2em);
   @include main(1050);
+}
+
+#content{
+  padding: 1em;
+
 }
 
 #footer{
@@ -29,9 +67,10 @@
     visibility: hidden;
   }
 
-  @include main(1000);
+  @include main(1050);
   position: relative;
-  background-color: $dark-grey;
+  padding: 1em;
+  background-color: $dark-gray;
   color: $white;
   p{
     color: $white;

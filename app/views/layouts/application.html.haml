@@ -1,42 +1,36 @@
 !!!
 %html
   %head
-    %title Stratedgy
+    %title Stratedgy: The edge in college planning and student development
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "vendor/modernizr"
-    = javascript_include_tag "application", "data-turbolinks-track" => true
+
     = csrf_meta_tags
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
   %body
+    = javascript_include_tag "application", "data-turbolinks-track" => true
     #nav-outer
       %nav.top-bar
-        %ul.title-area
-          %li.name
-            %h1
-              %a{href: '#'}
-                StratEDgy
         %section.top-bar-section
           %ul.left
             %li
-              %a{href: '#'}
-                About
+              = link_to 'About', about_path
             %li
-              %a{href: '#'}
-                Services
+              = link_to 'Services', services_path
             %li
-              %a{href: '#'}
-                Resources
+              = link_to 'Resources', resources_path
             %li
-              %a{href: '#'}
-                Success
-            %li
-              %a{href: '#'}
-                Contact
+              = link_to 'Contact', contact_path
 
-    #content
-      = yield
-    #footer
-      %p.left
-        ACADEMIC STRATEDGEY 2013. All rights reserveed
-      %p.right
-        Contact info@academicstratedgey.com
+    #outer
+      #logo
+        %h1 Academic StratEDgy
+        %p.tagline
+          The edge in college planning and student development
+      #content
+        = yield
+      #footer
+        %p.left
+          ACADEMIC STRATEDGEY 2013. All rights reserveed
+        %p.right
+          Contact info@academicstratedgey.com
