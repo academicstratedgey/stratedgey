@@ -32,8 +32,11 @@
             .large-9.columns
                 = text_field_tag :subject
         .row
-            .large-9.large-offset-3.columns
-                = text_area_tag :message, nil, placeholder: 'Message*'
+            .large-3.columns
+                %label.left.inline{for: 'message'}
+                    Message*
+            .large-9.columns
+                = text_area_tag :message
         .row
             .large-9.large-offset-3.columns
                 %button{type: 'submit', name: 'commit'}
