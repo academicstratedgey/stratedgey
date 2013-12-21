@@ -19,10 +19,15 @@
 @import "pages/index";
 @import "pages/about";
 @import "pages/services";
+@import "pages/contact";
+@import "pages/resources";
 
 // Layout Styles
 h2{
   font-size: emCalc(22);
+}
+h3{
+  font-size: emCalc(20);
 }
 
 // Nav Styles
@@ -31,6 +36,12 @@ h2{
   color: $white;
   nav{
     @include main(1050);
+
+    .name{
+      width: emCalc(601);
+      height: emCalc(195);
+      background-image: image-url('logo.png');
+    }
   }
 }
 
@@ -38,11 +49,14 @@ h2{
   padding: 1em;
   background-color: $crimson;
   color: $white;
+  height: emCalc(150);
   h1{
     color: $white;
   }
 
   p.tagline{
+    position: relative;
+    top: emCalc(45);
     text-align: right;
     font-style: italic;
   }
@@ -59,6 +73,9 @@ h2{
 }
 
 #footer{
+  a{
+    color: $white;
+  }
   &:after{
     content: ".";
     display: block;

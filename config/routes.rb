@@ -6,6 +6,7 @@ Stratedgy::Application.routes.draw do
   get 'services/(:type)' => 'home#services', as: :services
   get 'resources' => 'home#resources', as: :resources
   get 'contact' => 'home#contact', as: :contact
+  post 'send_contact' => 'home#send_contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

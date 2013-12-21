@@ -15,25 +15,28 @@
         %span.red
             Simply knowing what to expect, how to take action, and how to present yourself can significantly diminish stress or uncertainty, while increasing your chances of admission
 
-    .indented-panel
-        %h2.red Explore and Take Action
+    .bordered-panel
+        %h2.red-strong Explore and Take Action
         .row
             .captioned-circle.large-3.columns
                 .circle
                 .caption
-                    About
+                    = link_to 'About', about_path
 
             .captioned-circle.large-3.columns
                 .circle
                 .caption
-                    College Admissions Counseling
+                    = link_to 'College Admissions Counseling',
+                        services_path(:counseling)
 
             .captioned-circle.large-3.columns
                 .circle
                 .caption
-                    Resume & Experience Building
+                    = link_to 'Resume & Experience Building',
+                        services_path(:resumes)
 
             .captioned-circle.large-3.columns
                 .circle
                 .caption
-                    Tutoring
+                    = link_to 'Tutoring',
+                        services_path(:tutoring)

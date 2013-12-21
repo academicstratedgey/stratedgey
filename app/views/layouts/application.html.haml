@@ -12,19 +12,22 @@
     #nav-outer
       %nav.top-bar
         %section.top-bar-section
-          %ul.left
-            %li
+          %ul.title-area
+            %a{href: root_path}
+              %li.name
+          %ul.right
+
+            %li{'class' => ('active' if @current_page == :about)}
               = link_to 'About', about_path
-            %li
+            %li{'class' => ('active' if @current_page == :services)}
               = link_to 'Services', services_path
-            %li
+            %li{'class' => ('active' if @current_page == :resources)}
               = link_to 'Resources', resources_path
-            %li
+            %li{'class' => ('active' if @current_page == :contact)}
               = link_to 'Contact', contact_path
 
     #outer
       #logo
-        %h1 Academic StratEDgy
         %p.tagline
           The edge in college planning and student development
       #content
@@ -33,4 +36,6 @@
         %p.left
           ACADEMIC STRATEDGEY 2013. All rights reserveed
         %p.right
-          Contact info@academicstratedgey.com
+          Contact 
+          %a{href: 'mailto:info@academicstratedgey.com'}
+            info@academicstratedgey.com
