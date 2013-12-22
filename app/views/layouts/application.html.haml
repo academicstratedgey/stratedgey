@@ -2,6 +2,10 @@
 %html
   %head
     %title STRATEDGEY: The edge in college planning and student development
+
+    %link{href: image_path("favicon.png"), rel: "shortcut icon" }
+    %link{href: image_path("favicon.png"), rel: "icon", type: "image/png"}
+
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "vendor/modernizr"
 
@@ -12,9 +16,6 @@
     #nav-outer
       %nav.top-bar
         %section.top-bar-section
-          %ul.title-area
-            %a{href: root_path}
-              %li.name.hide-for-small-only
           %ul.right
 
             %li{'class' => ('active' if @current_page == :about)}
@@ -27,9 +28,10 @@
               = link_to 'Contact', contact_path
 
     #outer
-      #logo.hide-for-small-only
-        %p.tagline
-          The edge in college planning and student development
+      %a{href: root_path}
+        #logo
+      .tagline.hide-for-small-only
+        The edge in college planning and student development
       #content
         = yield
       #footer

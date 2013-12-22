@@ -40,26 +40,32 @@ h3{
     .name{
       width: emCalc(601);
       height: emCalc(195);
-      background-image: image-url('logo.png');
     }
   }
 }
 
 #logo{
   padding: 1em;
-  background-color: $crimson;
   color: $white;
   height: emCalc(150);
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: image-url('logo_long.png');
+  background-size: contain;
+
   h1{
     color: $white;
   }
+}
 
-  p.tagline{
-    position: relative;
-    top: emCalc(45);
-    text-align: right;
-    font-style: italic;
-  }
+.tagline{
+  padding: 1.0em;
+  color: $white;
+  background-color: $crimson;
+  text-align: right;
+  font-style: italic;
 }
 
 #outer{
@@ -69,6 +75,7 @@ h3{
 
 #content{
   padding: 1em;
+  background-color: $white;
 
 }
 
@@ -92,4 +99,8 @@ h3{
   p{
     color: $white;
   }
+}
+
+body{
+  background-color: $white;
 }

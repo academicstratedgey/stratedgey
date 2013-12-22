@@ -1,4 +1,3 @@
-require 'debugger'
 class HomeController < ApplicationController
     def index
 
