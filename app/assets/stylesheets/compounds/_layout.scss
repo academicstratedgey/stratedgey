@@ -1,0 +1,26 @@
+#footer-outer{
+  background-color: $dark-gray; 
+}
+
+#footer{
+  a{
+    color: $white;
+  }
+  &:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  @include main($full-width);
+  position: relative;
+  padding: 1em;
+  background-color: $dark-gray;
+  color: $white;
+  p{
+    color: $white;
+    margin: 0;
+  }
+}

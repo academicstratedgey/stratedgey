@@ -1,6 +1,3 @@
-@import "elements/colors";
-@import "elements/borders";
-
 .service-item{
     @include thin_border;
     padding: 1em;

@@ -1,9 +1,23 @@
-@import "elements/borders";
-@import "compass";
+$full-width: 950;
 
 @mixin main($width){
     margin: auto;
     max-width: emCalc($width);
+}
+
+body{
+  background-color: $white;
+}
+
+#outer{
+  // @include single-box-shadow($gray, 0, 10px, 2em);
+  @include main($full-width);
+}
+
+#content{
+  padding: 1em;
+  background-color: $white;
+
 }
 
 .bordered-panel{

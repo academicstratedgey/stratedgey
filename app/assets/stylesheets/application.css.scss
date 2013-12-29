@@ -3,104 +3,21 @@
 @import "compass";
 @import "foundation/components/orbit";
 
-// App Imports
-@import "home";
-
-// elements
+// Elements - Single classes, ids and tags
 @import "elements/colors";
-@import "elements/containers";
+@import "elements/borders";
 @import "elements/text";
+@import "elements/containers";
 
-// molecules
-@import "molecules/captioned";
-@import "molecules/items";
+// Compounds - Compositions of multiple classes, ids and tags
+@import "compounds/items";
+@import "compounds/navs";
+@import "compounds/captions";
+@import "compounds/layout";
 
-// page specific
-@import "pages/index";
-@import "pages/about";
-@import "pages/services";
-@import "pages/contact";
-@import "pages/resources";
-
-$full-width: 950;
-
-// Layout Styles
-
-// Nav Styles
-#nav-outer{
-  background-color: $dark-gray;
-  color: $white;
-  nav{
-    @include main($full-width);
-
-    .name{
-      width: emCalc(601);
-      height: emCalc(195);
-    }
-  }
-}
-
-#logo{
-  padding: 1em;
-  color: $white;
-  height: emCalc(150);
-  width: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: image-url('logo_long.png');
-  background-size: contain;
-
-  h1{
-    color: $white;
-  }
-}
-
-.logo-tagline{
-  padding: 1.0em;
-  color: $white;
-  background-color: $crimson;
-  text-align: right;
-  font-style: italic;
-}
-
-#outer{
-  // @include single-box-shadow($gray, 0, 10px, 2em);
-  @include main($full-width);
-}
-
-#content{
-  padding: 1em;
-  background-color: $white;
-
-}
-
-#footer-outer{
-  background-color: $dark-gray; 
-}
-
-#footer{
-  a{
-    color: $white;
-  }
-  &:after{
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-  }
-
-  @include main($full-width);
-  position: relative;
-  padding: 1em;
-  background-color: $dark-gray;
-  color: $white;
-  p{
-    color: $white;
-  }
-}
-
-body{
-  background-color: $white;
-}
+// Variants - Variations on compounds or elements
+@import "Variants/index";
+@import "Variants/about";
+@import "Variants/services";
+@import "Variants/contact";
+@import "Variants/resources";
