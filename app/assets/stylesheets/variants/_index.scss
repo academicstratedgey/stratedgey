@@ -5,18 +5,4 @@
             margin-bottom: emCalc(20);
         }
     }
-    .slider{
-        li{
-            vertical-align: middle;
-            height: emCalc(350);
-            overflow: hidden;
-        }
-
-        img{
-            position: relative;
-            top: -50%;
-            width: 100%;
-            vertical-align: middle;
-        }
-    }
 }

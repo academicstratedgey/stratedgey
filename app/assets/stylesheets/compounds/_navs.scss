@@ -13,21 +13,45 @@
   }
 }
 
-#logo{
-  padding: 1em;
-  color: $white;
-  height: emCalc(150);
-  width: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: image-url('logo_long.png');
-  background-size: contain;
-
-  h1{
-    color: $white;
-  }
+#banner-wrapper{
+  margin-bottom: 1em;
 }
+
+#banner{
+  $banner-height: emCalc(200);
+  height: $banner-height;
+
+  .columns{
+    padding: 0;
+  }
+
+  .logo{
+    display: block;
+    height: $banner-height;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: image-url('logo.jpg');
+
+    background-size: contain;
+  }
+
+  .page-image{
+    @include box-sizing(border-box);
+    height: $banner-height;
+    overflow: hidden;
+
+    img{
+      position: relative;
+      top: -50%;
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+}
+
+
 
 .logo-tagline{
   padding: 1.0em;

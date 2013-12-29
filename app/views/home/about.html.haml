@@ -1,9 +1,15 @@
 #about-page
+    #banner-wrapper
+        #banner.row
+            %a.logo.small-5.columns{href: root_path}
+            .page-image.small-6.small-offset-1.columns
+                =image_tag 'pages/About.jpg'
+
     %h1.red ABOUT
     .row
-        .bordered-panel.large-12.columns
-            .panel-title
-                %h2.red-strong Mission & Vision
+        .panel-title
+            %h2.red-strong Mission & Vision
+        .bordered-panel.large-12.columns                
             %p.normal
                 ACADEMIC STRATEDGEY demystifies the application process through our strategic and personalized approach to college planning and student development. By equipping students and parents with the information, direction, and tools they need to succeed, we take stress out of the equation and position applicants for success. 
             
@@ -11,14 +17,14 @@
                 While applying to school and leadership opportunities can be difficult and anxiety-invoking, it can also provide a wonderful experience of self-discovery. We envision a world in which applicants are rewarded for their knowledge of the admissions process. One in which students align their interests and activities to demonstrate their passion and push themselves to excel inside and outside of the classroom. Ultimately, these thoughtful, well-guided applicants will find their ideal school and be rewarded for their efforts; improving their community and themselves along the way. 
 
     .row
+        .panel-title
+            %h2.red-strong Bree Koziara, Ed.M. Harvard University
+            %span
+                %strong
+                    Founder/President ACADEMIC STRATEDGEY
         .bordered-panel.large-12.columns
-            .panel-title
-                %h2.red-strong Bree Koziara, Ed.M. Harvard University
-                %span
-                    %strong
-                        Founder/President ACADEMIC STRATEDGEY
-                .bree-photo
-                    =image_tag 'Bree.jpg'
+            .bree-photo
+                =image_tag 'Bree.jpg'
 
             %p.normal
                 Bree brings a unique and innovative approach to college counseling and resume building. Bree is an independent college admissions counselor and academic consultant based in Orange County, California. She holds a B.A. in Communication (Summa Cum Laude) from the University of Southern California and an Ed.M. in Higher Education from Harvard University. 
