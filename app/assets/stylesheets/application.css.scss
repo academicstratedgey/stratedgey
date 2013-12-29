@@ -22,20 +22,16 @@
 @import "pages/contact";
 @import "pages/resources";
 
+$full-width: 950;
+
 // Layout Styles
-h2{
-  font-size: emCalc(22);
-}
-h3{
-  font-size: emCalc(20);
-}
 
 // Nav Styles
 #nav-outer{
   background-color: $dark-gray;
   color: $white;
   nav{
-    @include main(1050);
+    @include main($full-width);
 
     .name{
       width: emCalc(601);
@@ -69,14 +65,18 @@ h3{
 }
 
 #outer{
-  @include single-box-shadow($gray, 0, 10px, 2em);
-  @include main(1050);
+  // @include single-box-shadow($gray, 0, 10px, 2em);
+  @include main($full-width);
 }
 
 #content{
   padding: 1em;
   background-color: $white;
 
+}
+
+#footer-outer{
+  background-color: $dark-gray; 
 }
 
 #footer{
@@ -91,7 +91,7 @@ h3{
     visibility: hidden;
   }
 
-  @include main(1050);
+  @include main($full-width);
   position: relative;
   padding: 1em;
   background-color: $dark-gray;

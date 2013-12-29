@@ -1,3 +1,13 @@
 #services-page{
-    
+    .row{
+        .columns:first-child{
+            padding: 0;
+            padding-right: emCalc(15);
+        }
+
+        .columns:last-child{
+            padding: 0;
+            padding-left: emCalc(15);
+        }
+    }   
 }

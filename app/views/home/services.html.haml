@@ -1,53 +1,37 @@
 #services-page
     %h1.red SERVICES OFFERED
     .row.even-columns
-        .large-12.columns
-            %p ACADEMIC STRATEDGEY offers a comprehensive range of college planning and student development services:
-            .margined.large-4.columns
-                .bordered-panel.even-column
-                    .captioned-circle
-                        .circle
-                        .caption
-                            %h2.red-strong
-                                = link_to 'College Admission Counseling', services_path(:counseling)
+        .large-4.columns
+            .bordered-panel.even-column
+                .captioned-circle
+                    .circle
+                    .caption
+                        %h2.red-strong
+                            = link_to 'College Admission Counseling', services_path(:counseling)
 
-                    %p
-                        ACADEMIC STRATEDGEY's strategic and personalized approach to college planning helps students and parents successfully navigate the college admissions process.
-                    .spaced-strong
-                        College Planning Grade-level Packages
-                    .spaced-strong
-                        Group Workshops
-                    .spaced-strong
-                        Hourly A la Carte Services
-            .margined.large-4.columns
-                .bordered-panel.even-column
-                    .captioned-circle
-                        .circle
-                        .caption
-                            %h2.red-strong
-                                = link_to 'Resume & Experience Building', services_path(:resumes)
-                    %p
-                        No Matter what you are striving toward, ACADEMIC STRATEDGEY will help you create high-impact resume that will get you noticed by schools or employers
-                    .spaced-strong
-                        Resume Review & Resume Overhaul
-                    .spaced-strong
-                        Experience Gap Analysis and Activity Recommendation
-                    .spaced-strong
-                        Social Impact Project Development
+                %p
+                    ACADEMIC STRATEDGEY's strategic and personalized approach to college planning helps students and parents successfully navigate the college admissions process.
+                    = link_to 'Learn more', services_path(:counseling)
+        .large-4.columns
+            .bordered-panel.even-column
+                .captioned-circle
+                    .circle
+                    .caption
+                        %h2.red-strong
+                            = link_to 'Resume & Experience Building', services_path(:resumes)
+                %p
+                    No Matter what you are striving toward, ACADEMIC STRATEDGEY will help you create high-impact resume that will get you noticed by schools or employers
+                    = link_to 'Learn more', services_path(:resumes)
 
-            .margined.large-4.columns
-                .bordered-panel.even-column
-                    .captioned-circle
-                        .circle
-                        .caption
-                            %h2.red-strong
-                                = link_to 'Tutoring', services_path(:tutoring)
+        .large-4.columns
+            .bordered-panel.even-column
+                .captioned-circle
+                    .circle
+                    .caption
+                        %h2.red-strong
+                            = link_to 'Tutoring', services_path(:tutoring)
 
-                    %p
-                        ACADEMIC STRATEDGEY provides high quality, results-oriented tutoring and skill-building workshops for middle and high school students.
+                %p
+                    ACADEMIC STRATEDGEY provides high quality, results-oriented tutoring and skill-building workshops for middle and high school students.
 
-                    .spaced-strong
-                        Multi-subject Tutoring
-
-                    .spaced-strong
-                        Writing Workshop Series
+                    = link_to 'Learn more', services_path(:tutoring)
