@@ -1,13 +1,9 @@
 #services-page
-    #banner-wrapper
-        #banner.row
-            %a.logo.small-5.columns{href: root_path}
-            .page-image.small-6.small-offset-1.columns
-                =image_tag 'pages/Service.jpg'
+    = render "banner"
 
     %h1.red SERVICES OFFERED
     .row.even-columns
-        .large-4.columns
+        .medium-4.columns
             .bordered-panel.even-column
                 .captioned-circle
                     .circle
@@ -18,7 +14,7 @@
                 %p
                     ACADEMIC STRATEDGEY's strategic and personalized approach to college planning helps students and parents successfully navigate the college admissions process.
                     = link_to 'Learn more', services_path(:counseling)
-        .large-4.columns
+        .medium-4.columns
             .bordered-panel.even-column
                 .captioned-circle
                     .circle
@@ -29,7 +25,7 @@
                     No Matter what you are striving toward, ACADEMIC STRATEDGEY will help you create high-impact resume that will get you noticed by schools or employers
                     = link_to 'Learn more', services_path(:resumes)
 
-        .large-4.columns
+        .medium-4.columns
             .bordered-panel.even-column
                 .captioned-circle
                     .circle

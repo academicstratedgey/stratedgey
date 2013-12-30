@@ -1,32 +1,28 @@
 #index-page
-    #banner-wrapper
-        #banner.row
-            %a.logo.small-5.columns{href: root_path}
-            .page-image.small-6.small-offset-1.columns
-                =image_tag 'pages/Service.jpg'
+    = render 'banner'
     %ul{'class' => 'slider', 'data-orbit'=> ''}
         %li
             =image_tag 'pages/About.jpg', alt: 'slide'
             .orbit-caption
                 Slide 1
         %li
-            =image_tag 'pages/Service.jpg'
+            =image_tag 'pages/Services.jpg'
             .orbit-caption
                 Slide 2
         %li
-            =image_tag 'pages/CounselingService.jpg'
+            =image_tag 'pages/counselingServices.jpg'
             .orbit-caption
                 Slide 3
         %li
-            =image_tag 'pages/ResumeService.jpg'
+            =image_tag 'pages/resumesServices.jpg'
             .orbit-caption
                 Slide 4
         %li
-            =image_tag 'pages/TutoringService.jpg'
+            =image_tag 'pages/tutoringServices.jpg'
             .orbit-caption
                 Slide 5
         %li
-            =image_tag 'pages/Resource.jpg'
+            =image_tag 'pages/Resources.jpg'
             .orbit-caption
                 Slide 6
 

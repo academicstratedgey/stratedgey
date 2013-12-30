@@ -1,62 +1,67 @@
-#banner-wrapper
-    #banner.row
-        %a.logo.small-5.columns{href: root_path}
-        .page-image.small-6.small-offset-1.columns
-            =image_tag 'pages/TutoringService.jpg'
-%h1.red
-    TUTORING SERVICES
-
-%p
-    ACADEMIC STRATEDGEY provides high quality, results-oriented tutoring and skill-building workshops for middle and high school students.
+= render "banner"
+#page-nav.row
+    %h1.red.title TUTORING
+    %p.description.medium-7.columns
+        ACADEMIC STRATEDGEY provides high quality, results-oriented tutoring and skill-building workshops for middle and high school students.
+    .sections.medium-4.medium-offset-1.columns
+        %h2.red-strong.show-for-small-only
+            Sections
+        %ul
+            %li
+                %a{href: "#page-multi"}
+                    Multi-subject Tutoring
+            %li
+                %a{href: "#page-workshops"}
+                    Writing Workshops
 
 .row
+    .panel-title#page-multi
+        %h2.red-strong
+            Multi-subject Tutorting
     .bordered-panel
-        .panel-title
-            %h2.red-strong
-                Mutli-subject Tutorting
+        %p
+            Through convenient individual, group, and supplementary tutoring, we focus on academic improvement and confidence building. The goal: to provide students with the tools and structure they need to excel
+
+        .service-item
+            %h3.title
+                History
+            %ul
+                %li
+                    US History/Geography (8th Grade)
+                %li
+                    AP World History (10th Grade)
+                %li
+                    AP US History (11th grade) *Coming soon
             %p
-                Through convenient individual, group, and supplementary tutoring, we focus on academic improvement and confidence building. The goal: to provide students with the tools and structure they need to excel
+                The following subjects are available by referral:
 
-            .service-item
-                %h3.title
-                    History
-                %ul
-                    %li
-                        US History/Geography (8th Grade)
-                    %li
-                        AP World History (10th Grade)
-                    %li
-                        AP US History (11th grade) *Coming soon
-                %p
-                    The following subjects are available by referral:
+            %h3.title
+                Math
+            %ul
+                %li
+                    Algebra I
+                %li
+                    Geometry
+                %li
+                    Algebra II
+                %li
+                    Trig / Pre-calc
+                %li
+                    Calculus
+                %li
+                    Statistics
+            %h3.title
+                Science
+            %ul
+                %li
+                    7th Grade Science
+            %p
+                Please note: Tutoring services are geared toward Corona del Mar High School's curriculum. AP Exam reviews are open to all schools
 
-                %h3.title
-                    Math
-                %ul
-                    %li
-                        Algebra I
-                    %li
-                        Geometry
-                    %li
-                        Algebra II
-                    %li
-                        Trig / Pre-calc
-                    %li
-                        Calculus
-                    %li
-                        Statistics
-                %h3.title
-                    Science
-                %ul
-                    %li
-                        7th Grade Science
-                %p
-                    Please note: Tutoring services are geared toward Corona del Mar High School's curriculum. AP Exam reviews are open to all schools
-    
+    .panel-title#page-workshops
+        %h2.red-strong
+            Writing Workshop Series
     .bordered-panel
-        .panel-title
-            %h2.red-strong
-                Writing Workshop Series
         %p
             Strong writing skills are critical to success. ACADEMIC STRATEDGEY will teach you how to be a better writer through a series of skill-building workshops.
 

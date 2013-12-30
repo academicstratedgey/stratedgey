@@ -1,0 +1,11 @@
+#banner-wrapper
+    #banner.row
+        %a.logo.medium-5.columns{href: root_path}
+        .page-image.medium-6.medium-offset-1.columns.hide-for-small-only
+            - if not @current_page == :index
+                = image_tag "pages/#{@type}#{@current_page.capitalize}.jpg"
+            - else
+                .tagline
+                    %p 
+                        Empowering students to achieve their goals 
+                        through strategic college planning and resume building

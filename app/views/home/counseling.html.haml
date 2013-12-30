@@ -1,18 +1,31 @@
-#banner-wrapper
-    #banner.row
-        %a.logo.small-5.columns{href: root_path}
-        .page-image.small-6.small-offset-1.columns
-            =image_tag 'pages/CounselingService.jpg'
-%h1.red
-    COLLEGE COUNSELING SERVICES
+= render "banner"
 
-%p
-    Regardless of whether you are aiming for the Ivy League, a UC, or a state school, ACADEMIC STRATEDGEY gives students and parents the edge they are looking for. By systematically breaking the college planning process into phases, we keep clients informed, organized, and ahead of the pack. Learn more about the ACADEMIC STRATEDGEY Approach to College Planning
+#page-nav.row
+    %h1.title.red COLLEGE COUNSELING SERVICES
+    %p.description.medium-7.columns
+        Whether you are aiming for the Ivy League, a UC, or a state school, 
+        ACADEMIC STRATEDGEY systematically breaks the college planning
+        process into manageable phase; keeping students informed, organized,
+        and ahead of the pack.
+    .sections.medium-4.medium-offset-1.columns
+        %h2.red-strong.show-for-small-only
+            Sections
+        %ul
+            %li
+                %a{href: "#page-packages"}
+                    Grade-level Packages
+            %li
+                %a{href: "#page-workshops"}
+                    Targeted Group Workshops
+            %li
+                %a{href: "#page-hourly"}
+                    Hourly a la Carte Services
 .row
+    .panel-title#page-packages
+        %h2.red-strong
+            Grade-level Packages
     .bordered-panel
-        .panel-title
-            %h2.red-strong
-                Grade-level Packages
+
         %p
             Whether you are an entering freshman or a rising senior ACADEMIC STRATEDGEY offers grade-level packages to meet your college planning needs. Bree Koziara personally guides students and parents through each stage of the college admissions process, corresponding through e-mail, in person, over the phone, or via Skype/Google Hangout. Grade-level packages are based on a one year contract with ACADEMIC STRATEDGEY. Full payment is due and payable at the time of first consult.
         .service-item
@@ -217,10 +230,11 @@
                                 NCAA Athletic information and requirements, if applicable
 
 .row
+    .panel-title#page-workshops
+        %h2.red-strong
+            College Planning Group Workshops
     .bordered-panel
-        .panel-title
-            %h2.red-strong
-                College Planning Group Workshops
+
 
         %p
             No matter where you are in the process, a targeted group workshop can provide the direction and tools you need to move forward
@@ -304,10 +318,10 @@
 
 
 .row
+    .panel-title#page-hourly
+        %h2.red-strong
+            Hourly A la Carte Services
     .bordered-panel
-        .panel-title
-            %h2.red-strong
-                Hourly A la Carte Services
         %p
             If you are interested in targeting one or two areas of the college application process, a la carte services at an hourly rate may be the right route to take
 

@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
     def index
-
+        @current_page = :index
     end
 
     def about
@@ -10,6 +10,7 @@ class HomeController < ApplicationController
     def services
         @current_page = :services
         if params[:type]
+            @type = params[:type]
             render params[:type]
         end
     end

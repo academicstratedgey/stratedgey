@@ -1,8 +1,4 @@
-#banner-wrapper
-    #banner.row
-        %a.logo.small-5.columns{href: root_path}
-        .page-image.small-6.small-offset-1.columns
-            =image_tag 'pages/Contact.jpg'
+= render "banner"
 %h1.red Contact
 %p
     Thank you for your interest in ACADEMIC STRATEDGEY. For general inquires, prices, and scheduling, please complete the following form or e-mail us directly at 
@@ -13,36 +9,36 @@
         %legend
             Information
         .row
-            .large-3.columns
+            .medium-3.columns
                 %label.left.inline{for: 'full_name'}
                     Your Full Name*
-            .large-9.columns
+            .medium-9.columns
                 = text_field_tag :full_name
         .row
-            .large-3.columns
+            .medium-3.columns
                 %label.left.inline{for: 'email'}
                     Your Email*
-            .large-9.columns
+            .medium-9.columns
                 = text_field_tag :email
         .row
-            .large-3.columns
+            .medium-3.columns
                 %label.left.inline{for: 'grade'}
                     Your Current Grade level
-            .large-9.columns
+            .medium-9.columns
                 = text_field_tag :grade
         .row
-            .large-3.columns
+            .medium-3.columns
                 %label.left.inline{for: 'subject'}
                     Subject Line*
-            .large-9.columns
+            .medium-9.columns
                 = text_field_tag :subject
         .row
-            .large-3.columns
+            .medium-3.columns
                 %label.left.inline{for: 'message'}
                     Message*
-            .large-9.columns
+            .medium-9.columns
                 = text_area_tag :message
         .row
-            .large-9.large-offset-3.columns
+            .medium-9.medium-offset-3.columns
                 %button{type: 'submit', name: 'commit'}
                     Send

@@ -13,50 +13,30 @@
   }
 }
 
-#banner-wrapper{
-  margin-bottom: 1em;
-}
-
-#banner{
-  $banner-height: emCalc(200);
-  height: $banner-height;
-
+#page-nav{
   .columns{
     padding: 0;
   }
 
-  .logo{
-    display: block;
-    height: $banner-height;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: image-url('logo.jpg');
+  .title{
 
-    background-size: contain;
+  }
+  .description{
+
   }
 
-  .page-image{
-    @include box-sizing(border-box);
-    height: $banner-height;
-    overflow: hidden;
+  .sections{
+    a{
+      color: $black;
+    }
 
-    img{
-      position: relative;
-      top: -50%;
-      width: 100%;
-      vertical-align: middle;
+    li{
+      @media #{$small-only}{
+        text-align: left;
+      }
+      text-align: right;
+      font-weight: bold;
+      list-style: none;
     }
   }
-
-}
-
-
-
-.logo-tagline{
-  padding: 1.0em;
-  color: $white;
-  background-color: $crimson;
-  text-align: right;
-  font-style: italic;
 }
