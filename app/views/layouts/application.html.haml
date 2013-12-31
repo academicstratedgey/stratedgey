@@ -14,7 +14,15 @@
   %body
     = javascript_include_tag "application", "data-turbolinks-track" => true
     #nav-outer
-      %nav.top-bar
+      %nav.top-bar{'data-topbar' => ''}
+        %ul.title-area
+          %li.name
+            %a{href: '#'}
+              
+          %li.toggle-topbar.menu-icon
+            %a{href: '#'}
+              %span
+                Menu
         %section.top-bar-section
           %ul.right
             %li{'class' => ('active' if @current_page == :index)}

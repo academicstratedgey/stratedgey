@@ -5,11 +5,6 @@
   color: $white;
   nav{
     @include main($full-width);
-
-    .name{
-      width: emCalc(601);
-      height: emCalc(195);
-    }
   }
 }
 
