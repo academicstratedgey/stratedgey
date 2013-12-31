@@ -2,37 +2,43 @@
     = render 'banner'
     %ul{'class' => 'slider', 'data-orbit'=> ''}
         %li
-            =image_tag 'pages/About.jpg', alt: 'slide'
+            =image_tag 'pages/About.jpg', alt: 'Graduation Caps in the Air'
             .orbit-caption
-                Slide 1
+                Innovative Approach - Turn a stressful, complex undertaking into a thoughtful, individualized process.
         %li
-            =image_tag 'pages/Services.jpg'
+            =image_tag 'pages/Services.jpg', alt: 'Arch Column Tunnel'
             .orbit-caption
-                Slide 2
+                Comprehensive Offerings - Tailored services and expert guidance 
+                give applicants an edge.
+                %strong
+                    = link_to 'Read More', services_path()
+                
         %li
-            =image_tag 'pages/counselingServices.jpg'
+            =image_tag 'pages/counselingServices.jpg', alt: 'Accepted T-shirts'
             .orbit-caption
-                Slide 3
+                College Counseling - Smoothly and successfully navigate the 
+                admissions process. 
         %li
-            =image_tag 'pages/resumesServices.jpg'
+            =image_tag 'pages/resumesServices.jpg', alt: 'Trojan Marching Band'
             .orbit-caption
-                Slide 4
+                Resume & Experience Building - Make a strong first impression.
+                %strong 
+                    = link_to 'Read more', services_path(:resumes)
+                
         %li
-            =image_tag 'pages/tutoringServices.jpg'
+            =image_tag 'pages/tutoringServices.jpg', alt: 'Veritas Gate'
             .orbit-caption
-                Slide 5
-        %li
-            =image_tag 'pages/Resources.jpg'
-            .orbit-caption
-                Slide 6
+                Tutoring - Build the confidence and skills needed to succeed in 
+                high school and beyond. 
+                %strong
+                    = link_to 'Read More', services_path(:tutoring)
+                
 
-
-    %p.normal
+    
+    %p
         %span.red-strong
-            ACADEMIC STRATEDGEY offers an insider's perspective on the college admissions and student development process.
-        The road to college is long and it begins well before students fill out their applications. Increased selectivity and higher admissions standards have made gaining acceptance more complex and competitive than ever before. 
-     
-    %p.normal
-        The problem: students and parents also face a serious lack of guidance and reliable information, which can leave even the most dedicated among them feeling overwhelmed. That’s where ACADEMIC STRATEDGEY can help.
-        %span.red
-            Simply knowing what to expect, how to take action, and how to present yourself can significantly diminish stress or uncertainty, while increasing your chances of admission
+            ACADEMIC STRATEDGEY offers an insider's perspective on the college admissions and candidate development process.
+        Increased selectivity and higher admissions standards have made gaining acceptance more complex and competitive than ever before. Unfortunately, students and parents face a serious lack of guidance and reliable information, which can leave even the most dedicated among them feeling stressed or overwhelmed. That's where ACADEMIC STRATEDGEY can help. 
+        = link_to 'Learn more', services_path()
+
+
