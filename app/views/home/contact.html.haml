@@ -4,40 +4,56 @@
     Thank you for your interest in ACADEMIC STRATEDGEY. For general inquires, prices, and scheduling, please complete the following form or e-mail us directly at
     %a{href: 'mailto:academicstratedgey@gmail.com'}
         academicstratedgey@gmail.com
-= form_tag controller: 'home', action: 'send_contact', method: 'post' do |builder|
+= form_tag send_contact_path, 'data-abide' => '' do |builder|
     %fieldset#contact-information
         %legend
             Information
-        .row
+        .row.name-field
             .medium-3.columns
                 %label.left.inline{for: 'full_name'}
-                    Your Full Name*
+                    Full Name
+                    %small
+                        required
             .medium-9.columns
-                = text_field_tag :full_name
-        .row
+                = text_field_tag :full_name, nil, required: '', pattern: 'alpha_numeric'
+                %small.error
+                    Name is required and must be alpha numeric
+        .row.email-field
             .medium-3.columns
                 %label.left.inline{for: 'email'}
-                    Your Email*
+                    Email
+                    %small
+                        required
             .medium-9.columns
-                = text_field_tag :email
+                = text_field_tag :email, nil, required: '', pattern: 'email'
+                %small.error
+                    A valid email address is required
         .row
             .medium-3.columns
                 %label.left.inline{for: 'grade'}
-                    Your Current Grade level
+                    Current Grade level
             .medium-9.columns
                 = text_field_tag :grade
-        .row
+        .row.subject-field
             .medium-3.columns
                 %label.left.inline{for: 'subject'}
-                    Subject Line*
+                    Subject Line
+                    %small
+                        required
             .medium-9.columns
-                = text_field_tag :subject
-        .row
+                = text_field_tag :subject, nil, required: '', pattern: 'alpha_numeric'
+                %small.error
+                    The subject line cannot be blank, and it must be alpha numeric
+        .row.message-field
             .medium-3.columns
                 %label.left.inline{for: 'message'}
-                    Message*
+                    Message
+                    %small
+                        required
             .medium-9.columns
-                = text_area_tag :message
+                = text_area_tag :message, nil, required: '', pattern: 'alpha_numeric'
+                %small.error
+                    The message cannot be blank, and it must be alpha numeric
         .row
             .medium-9.medium-offset-3.columns
                 %button{type: 'submit', name: 'commit'}
