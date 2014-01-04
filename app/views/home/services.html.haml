@@ -8,7 +8,8 @@
         .medium-4.columns
             .bordered-panel.even-column
                 .captioned-circle
-                    .circle
+                    %a.circle{href: services_path(:counseling)}
+                        = image_tag 'icons/counseling.png'
                     .caption
                         %h2.red-strong
                             = link_to 'College Admission Counseling', services_path(:counseling)
@@ -19,7 +20,8 @@
         .medium-4.columns
             .bordered-panel.even-column
                 .captioned-circle
-                    .circle
+                    %a.circle{href: services_path(:resumes)}
+                        = image_tag 'icons/resume.png'
                     .caption
                         %h2.red-strong
                             = link_to 'Resume & Experience Building', services_path(:resumes)
@@ -30,7 +32,8 @@
         .medium-4.columns
             .bordered-panel.even-column
                 .captioned-circle
-                    .circle
+                    %a.circle{href: services_path(:tutoring)}
+                        = image_tag 'icons/tutoring.png'
                     .caption
                         %h2.red-strong
                             = link_to 'Tutoring', services_path(:tutoring)

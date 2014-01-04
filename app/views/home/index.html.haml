@@ -5,6 +5,8 @@
             =image_tag 'pages/About.jpg', alt: 'Graduation Caps in the Air'
             .orbit-caption
                 Innovative Approach - Turn a stressful, complex undertaking into a thoughtful, individualized process.
+                %strong
+                    = link_to 'Read More', about_path()
         %li
             =image_tag 'pages/Services.jpg', alt: 'Arch Column Tunnel'
             .orbit-caption
@@ -18,6 +20,8 @@
             .orbit-caption
                 College Counseling - Smoothly and successfully navigate the 
                 admissions process. 
+                %strong
+                    = link_to 'Read More', services_path(:counseling)
         %li
             =image_tag 'pages/resumesServices.jpg', alt: 'Trojan Marching Band'
             .orbit-caption
@@ -40,5 +44,25 @@
             ACADEMIC STRATEDGEY offers an insider's perspective on the college admissions and candidate development process.
         Increased selectivity and higher admissions standards have made gaining acceptance more complex and competitive than ever before. Unfortunately, students and parents face a serious lack of guidance and reliable information, which can leave even the most dedicated among them feeling stressed or overwhelmed. That's where ACADEMIC STRATEDGEY can help. 
         = link_to 'Learn more', services_path()
+
+    .bordered-panel.row
+        .captioned-circle.medium-4.columns
+            %a.circle{href: services_path(:counseling)}
+                = image_tag 'icons/counseling.png'
+            .caption
+                %h2.red-strong
+                    = link_to 'College Admission Counseling', services_path(:counseling)
+        .captioned-circle.medium-4.columns
+            %a.circle{href: services_path(:resumes)}
+                = image_tag 'icons/resume.png'
+            .caption
+                %h2.red-strong
+                    = link_to 'Resume & Experience Building', services_path(:resumes)
+        .captioned-circle.medium-4.columns
+            %a.circle{href: services_path(:tutoring)}
+                = image_tag 'icons/tutoring.png'
+            .caption
+                %h2.red-strong
+                    = link_to 'Tutoring', services_path(:tutoring)
 
 
