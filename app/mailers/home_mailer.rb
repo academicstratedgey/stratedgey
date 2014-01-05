@@ -5,6 +5,6 @@ class HomeMailer < ActionMailer::Base
     @grade = grade
     @email = email
     @message = message
-    mail(to: 'colemanc@mit.edu', subject: "New Enquiry - #{name}")
+    mail(to: 'academicstratedgey@gmail.com', subject: "New Enquiry - #{name}")
   end
 end
