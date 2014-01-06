@@ -28,6 +28,7 @@ class HomeController < ApplicationController
         HomeMailer.enquiry(params[:full_name],
             params[:email],
             params[:grade],
+            params[:subject],
             params[:message]).deliver
         redirect_to root_path
     end

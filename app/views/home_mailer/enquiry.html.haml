@@ -1,3 +1,6 @@
-%p= "From #{@name} <#{@email}>"
-%p= "Grade: #{@grade}"
+%p
+    = "From: #{@name} <#{@email}>"
+    %br
+    = "Grade: #{@grade}"
+
 %p= @message
